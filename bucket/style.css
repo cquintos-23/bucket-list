@@ -1,0 +1,86 @@
+
+h1 {
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  color: #0A2571;
+  padding-left: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.left-column {
+  width: 35%;
+  padding-left: 20px;
+}
+
+.right-column {
+  width: 65%;
+  display: flex;
+  padding-right:20px;
+  justify-content: flex-start; /* or 'flex-end' or 'center' depending on alignment you want */
+}
+
+
+.legend {
+  display: flex;
+  gap: 1rem;
+  align-items: right;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.legend-circle-1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.legend-circle-2 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.legend-label {
+  font-size: 12px;
+  font-family: "Space Mono", monospace;
+  color: #0A2571;
+}
+
+body {
+    margin: 0;
+    font-family: "Space Mono", monospace;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  svg {
+    width: 100vw;
+    height: 98vh;
+    
+  }
+
+  circle {
+    color: #fff;
+    cursor: grab;
+    stroke-width: 1px;
+  }
+
+  text {
+    font-size: 12px;
+    pointer-events: none;
+  }
+
