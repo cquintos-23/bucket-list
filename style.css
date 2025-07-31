@@ -23,7 +23,7 @@ header {
   width: 65%;
   display: flex;
   padding-right:20px;
-  justify-content: flex-start; /* or 'flex-end' or 'center' depending on alignment you want */
+  justify-content: flex-start;
 }
 
 

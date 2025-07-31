@@ -70,7 +70,6 @@ const links = [];
 // Find the "Adventure" category hub
 const adventureHub = categoryHubs.find(h => h.category === "adventure");
 
-// Sanity check
 if (adventureHub) {
   continentHubs.forEach(contHub => {
     links.push({
@@ -202,7 +201,7 @@ countryHubs.forEach(countryHub => {
   function drag(simulation) {
     return d3.drag()
       .on("start", (event, d) => {
-        if (!event.active) simulation.alphaTarget(0.005).restart(); // optional, just to be safe
+        if (!event.active) simulation.alphaTarget(0.005).restart();
         d.fx = d.x;
         d.fy = d.y;
       })
@@ -211,9 +210,7 @@ countryHubs.forEach(countryHub => {
         d.fy = event.y;
       })
       .on("end", (event, d) => {
-        // Comment this out if you want the node to stay fixed after dragging
-        // d.fx = null;
-        // d.fy = null;
+
         simulation.alphaTarget(0);
       });
   }
