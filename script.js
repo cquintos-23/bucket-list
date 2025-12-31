@@ -149,20 +149,25 @@ countryHubs.forEach(countryHub => {
     .attr("stroke-opacity", 0.6);
 
   const circles = svg.selectAll("circle")
-    .data(allNodes)
-    .enter()
-    .append("circle")
-    .attr("r", d => d.isHub ? 6 : 10)
-    .attr("fill", d => {
-      if (!d.isHub) return color(d.category);
-      if (d.hubType === "category") return "#000000";
-      if (d.hubType === "continent") return "#86B63E";
-      if (d.hubType === "country") return "#F7A1B9";
-      if (d.hubType === "topics") return "#3BCBFF";
-      return "#ffffff"; // fallback
-    })    
-    .attr("stroke", d => d.isHub ? "#fff" : null)
-    .call(drag(simulation));
+  .data(allNodes)
+  .enter()
+  .append("circle")
+  .attr("r", d => d.isHub ? 6 : 10)
+  .attr("fill", d => {
+    if (!d.isHub) return color(d.category);
+    if (d.hubType === "category") return "#000000";
+    if (d.hubType === "continent") return "#86B63E";
+    if (d.hubType === "country") return "#F7A1B9";
+    if (d.hubType === "topics") return "#3BCBFF";
+    return "#ffffff";
+  })
+  .attr("stroke", d => {
+    if (d.isHub) return "#fff";
+    // For regular nodes, stroke based on completion status
+    return d.completed ? "#FF7700" : "none";
+  })
+  .attr("stroke-width", d => d.completed ? 2 : 0)
+  .call(drag(simulation));
 
   const labels = svg.selectAll("text")
     .data(allNodes) // includes both nodes and hubs  
