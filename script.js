@@ -166,7 +166,7 @@ countryHubs.forEach(countryHub => {
     // For regular nodes, stroke based on completion status
     return d.completed ? "#FF7700" : "none";
   })
-  .attr("stroke-width", d => d.completed ? 2 : 0)
+  .attr("stroke-width", d => d.completed ? 4 : 0)
   .call(drag(simulation));
 
   const labels = svg.selectAll("text")
