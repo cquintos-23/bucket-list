@@ -18,7 +18,7 @@ Leavenworth,Leavenworth,Washington,USA,North America,have the currywurst again,e
  ,,,,,tile making and tile painting,project,no,
  ,,,,,learn Spanish guitar,skill,no,
  ,,,,,buy a sailboat,project,no,
- ,,,,,take the same photo every day for a year?,project,no,
+ ,,,,,take the same photo every day for a year?,project,yes,
 County Clare,,,Ireland,Europe,Cliffs of Moher,adventure,no,vista
 Tuscany,,,Italy,Europe,Castello di Vicarello,adventure,no,
 Palouse,,,USA,North America,run around,adventure,no,nature
@@ -98,9 +98,9 @@ Kyoto,Kyoto,,Japan,Asia,eat,adventure,no,food
 ,,,Canada ,North America,see a narwhal,experience,no,animal
 ,,,,,see an Irish dancing performance,experience,no,
 ,,,,,paint a mural on a building,project,no,
-,,,,,run through an orange grove,experience,no,
+,,,,,run through an orange orchard,experience,no,
 ,,,,,harvest olives,experience,no,food
-,,,,,make an advent calendar,project,no,winter
+,,,,,make an advent calendar,project,yes,winter
 Mount Tamalpais,,,USA,North America,sunset on Mount Tamalpais,adventure,no,vista
 Samos,,,Greece,Europe,visit,adventure,no,
 Liguria,,,Italy,Europe,visit,adventure,no,
